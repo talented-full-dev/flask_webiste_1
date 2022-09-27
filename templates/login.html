@@ -1,78 +1,104 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> App landing</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static', filename='img/favicon.ico')}}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>
+            App landing</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="{{url_for('static', filename='img/favicon.ico')}}">
 
-	<!-- CSS here -->
-    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.min.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/slicknav.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/flaticon.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/progressbar_barfiller.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/gijgo.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/animate.min.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/animated-headline.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/magnific-popup.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/fontawesome-all.min.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/themify-icons.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/slick.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/nice-select.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
-</head>
-<body>
-    <!-- ? Preloader Start -->
-    <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <img src="{{url_for('static', filename='img/logo/loder.png')}}" alt="">
+        <!-- CSS here -->
+        <link
+            rel="stylesheet"
+            href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+        <link
+            rel="stylesheet"
+            href="{{url_for('static', filename='css/owl.carousel.min.css')}}">
+        <link
+            rel="stylesheet"
+            href="{{url_for('static', filename='css/slicknav.css')}}">
+        <link
+            rel="stylesheet"
+            href="{{url_for('static', filename='css/flaticon.css')}}">
+        <link
+            rel="stylesheet"
+            href="{{url_for('static', filename='css/progressbar_barfiller.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/gijgo.css')}}">
+        <link
+            rel="stylesheet"
+            href="{{url_for('static', filename='css/animate.min.css')}}">
+        <link
+            rel="stylesheet"
+            href="{{url_for('static', filename='css/animated-headline.css')}}">
+        <link
+            rel="stylesheet"
+            href="{{url_for('static', filename='css/magnific-popup.css')}}">
+        <link
+            rel="stylesheet"
+            href="{{url_for('static', filename='css/fontawesome-all.min.css')}}">
+        <link
+            rel="stylesheet"
+            href="{{url_for('static', filename='css/themify-icons.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/slick.css')}}">
+        <link
+            rel="stylesheet"
+            href="{{url_for('static', filename='css/nice-select.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    </head>
+    <body>
+        <!-- ? Preloader Start -->
+        <div id="preloader-active">
+            <div class="preloader d-flex align-items-center justify-content-center">
+                <div class="preloader-inner position-relative">
+                    <div class="preloader-circle"></div>
+                    <div class="preloader-img pere-text">
+                        <img src="{{url_for('static', filename='img/logo/loder.png')}}" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Preloader Start-->
+        <!-- Preloader Start-->
 
+        <main
+            class="login-body"
+            data-vide-bg="{{url_for('static', filename='img/login-bg.mp4')}}">
+            <!-- Login Admin -->
+            <form class="form-default" action="login-bg.mp4" method="POST">
 
-<main class="login-body" data-vide-bg="{{url_for('static', filename='img/login-bg.mp4')}}">
-    <!-- Login Admin -->
-    <form class="form-default" action="login-bg.mp4" method="POST">
-        
-        <div class="login-form">
-            <!-- logo-login -->
-            <div class="logo-login">
-                <a href="{{url_for('index')}}"><img src="{{url_for('static', filename='img/logo/loder.png')}}" alt=""></a>
-            </div>
-            <h2>Login Here</h2>
-            <div class="form-input">
-                <label for="name">Email</label>
-                <input  type="email" name="email" placeholder="Email">
-            </div>
-            <div class="form-input">
-                <label for="name">Password</label>
-                <input type="password" name="password" placeholder="Password">
-            </div>
-            <div class="form-input pt-30">
-                <input type="submit" name="submit" value="login">
-            </div>
-            
-            <!-- Forget Password -->
-            <a href="#" class="forget">Forget Password</a>
-            <!-- Forget Password -->
-            <a href="{{url_for('register')}}" class="registration">Registration</a>
-        </div>
-    </form>
-    <!-- /end login form -->
-</main>
+                <div class="login-form">
+                    <!-- logo-login -->
+                    <div class="logo-login">
+                        <a href="{{url_for('index')}}"><img src="{{url_for('static', filename='img/logo/loder.png')}}" alt=""></a>
+                    </div>
+                    <h2>Login Here</h2>
+                    <div class="form-input">
+                        <label for="name">Email</label>
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-input">
+                        <label for="name">Password</label>
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="form-input pt-30">
+                        <input type="submit" name="submit" value="login">
+                    </div>
 
-
-        <script src="{{url_for('static', filename='js/vendor/modernizr-3.5.0.min.js')}}"></script>
+                    <!-- Forget Password -->
+                    <a href="#" class="forget">Forget Password</a>
+                    <!-- Forget Password -->
+                    <a href="{{url_for('register')}}" class="registration">Registration</a>
+                </div>
+            </form>
+            <!-- /end login form -->
+        </main>
+        <script
+            src="{{url_for('static', filename='js/vendor/modernizr-3.5.0.min.js')}}"></script>
         <!-- Jquery, Popper, Bootstrap -->
         <script src="{{url_for('static', filename='js/vendor/jquery-1.12.4.min.js')}}"></script>
         <script src="{{url_for('static', filename='js/popper.min.js')}}"></script>
@@ -113,7 +139,7 @@
         <script src="{{url_for('static', filename='js/mail-script.js')}}"></script>
         <script src="{{url_for('static', filename='js/jquery.ajaxchimp.min.js')}}"></script>
 
-        <!-- Jquery Plugins, main Jquery -->	
+        <!-- Jquery Plugins, main Jquery -->
         <script src="{{url_for('static', filename='js/plugins.js')}}"></script>
         <script src="{{url_for('static', filename='js/main.js')}}"></script>
     </body>
